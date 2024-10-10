@@ -1,0 +1,18 @@
+
+Vaihe 1 kommentteja ja perusteluja:
+
+Valitsin projektin tietorakenteeksi std::unordered_map<std::string, std::vector<std::string>>, koska map:n käyttö oli minulle aiemmilta kursseilta tuttua ja pidin sitä kaikkein selkeimpänä.
+Otin viel unordered_map:n, koska se oli kurssimateriaalien mukaan tehokkaampi kuin tavanomainen map.
+unordered_map:n läpi on helppoa ja tehokasta iteroida. Sinne on myös tehokasta lisätä alkoita sekä poistaa sieltä alkioita. Myös alkioiden etsiminen pitäisi olla verrattaen tehokasta.
+
+Funktiossa towns_alphabetically() käytin apuna temp-tietorakennetta, koska on helpompaa, tehokkaampaa ja ohjelman kannalta turvallisempaa ensin kopioida data ja sitten manipuloida sitä
+kuin käydä itse tietorakenteen manipulointiin. Sama ajatus pätee myös muissa kohdissa jossa kopioidaan ensin tieto väliaikaiseen tietorakenteeseen ja sitten muokataan sitä.
+
+Koska olin jo valinnut edellä mainitun tietorakenteen koin parhaaksi tehdä uuden tietorakenteen vasallisuhteille, koska alkuperäiseen lisääminen tuntui hankalalta. Tällä taktiikalla sain
+projektin tehokkaasti tehtyä.
+
+Projektissa käytety metodit ja algoritmit ovat hyvin yleisiä stl ja std operaatoita, koska ne ovat selkeitä ja tehokkaita.
+Tein itse algoritmin mapin avaimen ja tietoelementin vaihdolle, koska sellaiseen ei muuten mahdollisuutta ollut ja tarvitsin sitä kipeästi.
+
+Funktiossa towns_nearest ratkaisuni ei palauta kaupunkeja aakkosjärjestyksessä, mikäli kahdella kaupungilla on sama etäisyys pyöristyksen jälkeen. Tätä ei projektin ohjeessa vaadittu joten koin
+sen liian monimutkaiseksi projektiksi lähteä tekemään. Etäisyyden perusteella luettelo siis toimii täysin oikein.
